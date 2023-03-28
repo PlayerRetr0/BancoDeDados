@@ -14,6 +14,7 @@ CREATE TABLE public.cliente (
 	cli_dt_data_nasc date NOT NULL,
 	cli_int_codigo_cli int4 NOT NULL,
 	usu_tx_nome_usuario varchar(50) NOT NULL,
+	end_cd_id serial not null,
 	CONSTRAINT cliente_cli_tx_cpf_key UNIQUE (cli_tx_cpf),
 	CONSTRAINT cliente_cli_tx_email_key UNIQUE (cli_tx_email),
 	CONSTRAINT cliente_cli_tx_endereço_key UNIQUE ("cli_tx_endereço"),
